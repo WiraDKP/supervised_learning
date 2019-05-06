@@ -14,7 +14,7 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 
 - Jalankan `Anaconda Prompt`
 
-- Silahkan lanjut ke [Python Introduction](./01\ -\ Python\ Introduction)
+- Silahkan lanjut ke [Python Introduction](https://www.google.com)
 
 ## Mac user
 - Download miniconda untuk Python 3.7
@@ -27,7 +27,7 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 
 - Jalankan terminal
 
-- Silahkan lanjut ke [Python Introduction](./01\ -\ Python\ Introduction)
+- Silahkan lanjut ke [Python Introduction](https://www.google.com)
 
 ## Linux user
 - Download miniconda untuk Python 3.7
@@ -45,4 +45,4 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     
 - hanya untuk memastikan, tutup dan buka terminal lagi
 
-- Silahkan lanjut ke [Python Introduction](./01\ -\ Python\ Introduction)
+- Silahkan lanjut ke [Python Introduction](https://www.google.com)
