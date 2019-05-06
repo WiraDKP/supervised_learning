@@ -2,7 +2,12 @@
 Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mempelajari teknik-teknik supervised learning menggunakan scikit-learn dan jcopml.
 
 # Starter Guide
-## Windows user
+## Step 1: Download materi
+- Klik tombol clone or download (yang warna hijau)
+- Silahkan klik Download ZIP, atau bagi yang familiar dengan git, silahkan clone repo ini
+
+## Step 2: Instalasi Miniconda
+### **Windows user**
 - Download miniconda untuk Python 3.7
     - Klik link ini untuk download: [Miniconda Windows 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)
     - Note: skip step ini apabila kamu sudah menggunakan Anaconda sebelumnya. Walau demikian, saya akan jelaskan alasan kenapa kamu sebaiknya menggunakan miniconda nanti di course ini.
@@ -14,9 +19,9 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 
 - Jalankan `Anaconda Prompt`
 
-- Silahkan lanjut ke [Python Introduction](https://www.google.com)
+- Silahkan lanjut ke [video selanjutnya](https://www.google.com)
 
-## Mac user
+### **Mac user**
 - Download miniconda untuk Python 3.7
     - Klik link ini untuk download: [Miniconda Mac OS X 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg)
     - Note: skip step ini apabila kamu sudah menggunakan Anaconda sebelumnya. Walau demikian, saya akan jelaskan alasan kenapa kamu sebaiknya menggunakan miniconda nanti di course ini.
@@ -27,11 +32,11 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 
 - Jalankan terminal
 
-- Silahkan lanjut ke [Python Introduction](https://www.google.com)
+- Silahkan lanjut ke [video selanjutnya](https://www.google.com)
 
-## Linux user
+### **Linux user**
 - Download miniconda untuk Python 3.7
-    - [Linux 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)
+    - Klik link ini untuk download: [Miniconda Linux 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)
     - Note: skip step ini apabila kamu sudah menggunakan Anaconda sebelumnya. Walau demikian, saya akan jelaskan alasan kenapa kamu sebaiknya menggunakan miniconda nanti di course ini.
     
 - Install miniconda
@@ -45,4 +50,4 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     
 - hanya untuk memastikan, tutup dan buka terminal lagi
 
-- Silahkan lanjut ke [Python Introduction](https://www.google.com)
+- Silahkan lanjut ke [video selanjutnya](https://www.google.com)
