@@ -3,8 +3,11 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 
 # Starter Guide
 ## Step 1: Download materi
-- Klik tombol clone or download (yang warna hijau)
-- Silahkan klik Download ZIP, atau bagi yang familiar dengan git, silahkan clone repo ini
+- Klik disini untuk [Download ZIP](https://codeload.github.com/WiraDKP/supervised_learning_with_sklearn_and_jcopml/zip/master), atau
+- Bagi yang familiar dengan git, boleh menggunakan clone
+    ```
+    git clone https://github.com/WiraDKP/supervised_learning_with_sklearn_and_jcopml.git
+    ```
 
 ## Step 2: Instalasi Miniconda
 ### **Windows user**
