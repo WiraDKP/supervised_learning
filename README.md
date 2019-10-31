@@ -1,12 +1,12 @@
-# Supervised Learning with Scikit-learn and J.COp ML
+# Supervised Learning by J.COp
 Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mempelajari teknik-teknik supervised learning menggunakan scikit-learn dan jcopml.
 
 # Starter Guide
 ## Step 1: Download materi
-- Klik disini untuk [Download ZIP](https://codeload.github.com/WiraDKP/supervised_learning_with_sklearn_and_jcopml/zip/master), atau
+- Klik disini untuk [Download ZIP](https://codeload.github.com/WiraDKP/supervised_learning/zip/master), atau
 - Bagi yang familiar dengan git, boleh menggunakan clone
     ```
-    git clone https://github.com/WiraDKP/supervised_learning_with_sklearn_and_jcopml.git
+    git clone https://github.com/WiraDKP/supervised_learning.git
     ```
 
 ## Step 2: Instalasi Miniconda
@@ -22,8 +22,6 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 
 - Jalankan `Anaconda Prompt`
 
-- Silahkan lanjut ke [video selanjutnya](https://www.google.com)
-
 ### **Mac user**
 - Download miniconda untuk Python 3.7
     - Klik link ini untuk download: [Miniconda Mac OS X 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg)
@@ -34,8 +32,6 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     - Tunggu hingga instalasi selesai
 
 - Jalankan terminal
-
-- Silahkan lanjut ke [video selanjutnya](https://www.google.com)
 
 ### **Linux user**
 - Download miniconda untuk Python 3.7
@@ -53,4 +49,78 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     
 - hanya untuk memastikan, tutup dan buka terminal lagi
 
-- Silahkan lanjut ke [video selanjutnya](https://www.google.com)
+## Step 3: Instalasi Jupyter 
+- Pastikan anda sedang berada di environment `(base)`, dan kita akan install 2 hal disana
+    ```
+    conda install jupyter nb_conda_kernels
+    ```
+
+## Step 4: Instalasi Environment
+- Change directory `cd` ke folder kerja ini
+    ```
+    cd supervised_learning/
+    ```
+- Jalankan command ini untuk menginstall environment `jcopml`
+    ```
+    conda env create -f env_jcopml.yml
+    ```
+
+## Step 5: Memastikan environment terinstall dengan baik
+### **Windows user**
+- Jalankan command ini dan pastikan ada `jupyter` dan `nb_conda_kernels`
+    ```
+    conda list | findstr "jupyter nb_conda_kernels"
+    ```
+- Jalankan command ini dan pastikan ada `jcopml`
+    ```
+    conda env list | findstr jcopml
+    ```
+    - Kalau tidak ada, solusinya adalah install ulang environment
+        ```
+        conda env create -f env_jcopml.yml
+        ```
+- Jalankan command ini dan pastikan ada `jcopml` dan `luwiji`
+    ```
+    conda list --name jcopml | findstr "jcopml luwiji"
+    ```
+    - Kalau tidak ada, ini disebabkan internet sempat terputus di tengah jalan
+    - Easy fix, remove lalu install ulang (yang sudah di download akan di skip), tapi pastikan kali ini internet berjalan dengan baik
+        ```
+        >> conda env remove --name jcopml
+        >> conda env create -f env_jcopml.yml
+        ```
+    - Advance fix
+        ```
+        >> conda activate jcopml
+        >> pip install xgboost==0.80 scikit-optimize==0.5.2 jcopml luwiji pillow==5.4.1
+        >> conda deactivate
+        ```
+### **MAC dan Linux user**
+- Jalankan command ini dan pastikan ada `jupyter` dan `nb_conda_kernels`
+    ```
+    conda list | grep -e jupyter -e nb_conda_kernels
+    ```
+- Jalankan command ini dan pastikan ada `jcopml`
+    ```
+    conda env list | grep jcopml
+    ```
+    - Kalau tidak ada, solusinya adalah install ulang environment
+        ```
+        conda env create -f env_jcopml.yml
+        ```
+- Jalankan command ini dan pastikan ada `jcopml` dan `luwiji`
+    ```
+    conda list --name jcopml | grep -e jcopml -e luwiji
+    ```
+    - Kalau tidak ada, ini disebabkan internet sempat terputus di tengah jalan
+    - Easy fix, remove lalu install ulang (yang sudah di download akan di skip), tapi pastikan kali ini internet berjalan dengan baik
+        ```
+        >> conda env remove --name jcopml
+        >> conda env create -f env_jcopml.yml
+        ```
+    - Advance fix
+        ```
+        >> conda activate jcopml
+        >> pip install xgboost==0.80 scikit-optimize==0.5.2 jcopml luwiji pillow==5.4.1
+        >> conda deactivate
+        ```
