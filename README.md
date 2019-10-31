@@ -66,61 +66,8 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     ```
 
 ## Step 5: Memastikan environment terinstall dengan baik
-### **Windows user**
-- Jalankan command ini dan pastikan ada `jupyter` dan `nb_conda_kernels`
+- Jalankan command berikut untuk mengecek instalasi dan ikuti instruksi yang dihasilkan
     ```
-    conda list | findstr "jupyter nb_conda_kernels"
+    python check_installation.py
     ```
-- Jalankan command ini dan pastikan ada `jcopml`
-    ```
-    conda env list | findstr jcopml
-    ```
-    - Kalau tidak ada, solusinya adalah install ulang environment
-        ```
-        conda env create -f env_jcopml.yml
-        ```
-- Jalankan command ini dan pastikan ada `jcopml` dan `luwiji`
-    ```
-    conda list --name jcopml | findstr "jcopml luwiji"
-    ```
-    - Kalau tidak ada, ini disebabkan internet sempat terputus di tengah jalan
-    - Easy fix, remove lalu install ulang (yang sudah di download akan di skip), tapi pastikan kali ini internet berjalan dengan baik
-        ```
-        >> conda env remove --name jcopml
-        >> conda env create -f env_jcopml.yml
-        ```
-    - Advance fix
-        ```
-        >> conda activate jcopml
-        >> pip install xgboost==0.80 scikit-optimize==0.5.2 jcopml luwiji pillow==5.4.1
-        >> conda deactivate
-        ```
-### **MAC dan Linux user**
-- Jalankan command ini dan pastikan ada `jupyter` dan `nb_conda_kernels`
-    ```
-    conda list | grep -e jupyter -e nb_conda_kernels
-    ```
-- Jalankan command ini dan pastikan ada `jcopml`
-    ```
-    conda env list | grep jcopml
-    ```
-    - Kalau tidak ada, solusinya adalah install ulang environment
-        ```
-        conda env create -f env_jcopml.yml
-        ```
-- Jalankan command ini dan pastikan ada `jcopml` dan `luwiji`
-    ```
-    conda list --name jcopml | grep -e jcopml -e luwiji
-    ```
-    - Kalau tidak ada, ini disebabkan internet sempat terputus di tengah jalan
-    - Easy fix, remove lalu install ulang (yang sudah di download akan di skip), tapi pastikan kali ini internet berjalan dengan baik
-        ```
-        >> conda env remove --name jcopml
-        >> conda env create -f env_jcopml.yml
-        ```
-    - Advance fix
-        ```
-        >> conda activate jcopml
-        >> pip install xgboost==0.80 scikit-optimize==0.5.2 jcopml luwiji pillow==5.4.1
-        >> conda deactivate
-        ```
+- Jika sudah aman, maka kita bisa mulai belajar. Semangat!
