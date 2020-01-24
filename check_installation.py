@@ -44,6 +44,7 @@ def main():
             print("Apakah kamu menggunakan Anaconda? Saya merekomendasikan untuk menggunakan miniconda.")
             print("Untuk sekarang, mohon jalankan command berikut")
             print(">> conda install nb_conda_kernels")
+            print("karena nb_conda_kernels tidak ada di bawaan anaconda")
     else:
         print("Mohon jalankan command berikut")
         print(">> conda install jupyter nb_conda_kernels")
