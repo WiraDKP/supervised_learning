@@ -2,7 +2,7 @@ import subprocess
 
 req = {
     "python", "tqdm", "nb_conda_kernels", "pip", "ipython", "numpy", "scipy", "pandas", 
-    "scikit-learn", "matplotlib", "seaborn", "pydotplus", "ipywidgets", "nltk", 
+    "scikit-learn", "matplotlib", "seaborn", "ipywidgets", "nltk", 
     "xgboost", "scikit-optimize", "jcopml", "luwiji", "pillow"
 }
 env_name = "jcopml"
