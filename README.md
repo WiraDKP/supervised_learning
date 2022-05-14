@@ -52,7 +52,7 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 ## Step 3: Instalasi Jupyter 
 - Kita akan install 2 hal di base environment
     ```
-    conda install --name base jupyter nb_conda_kernels
+    conda install --name base -c conda-forge jupyter nb_conda_kernels
     ```
 
 ## Step 4: Instalasi Environment
