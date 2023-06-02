@@ -43,7 +43,7 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     - jalankan terminal
     - Install miniconda menggunakan command berikut
         ```
-        bash Miniconda3-latest-Linux-x86_64.sh
+        bash Miniconda3-py39_23.3.1-0-Linux-x86_64.sh
         ```
     - Ketik `yes` untuk agree dengan license nya, kemudian `yes` lagi untuk `prepend miniconda install location to PATH`
     - Tunggu hingga instalasi selesai
@@ -53,7 +53,7 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
 ## Step 3: Instalasi Jupyter 
 - Kita akan install 2 hal di base environment
     ```
-    conda install --name base -c conda-forge jupyter nb_conda_kernels
+    conda install -n base -c conda-forge jupyter nb_conda_kernels "notebook<6.0" 
     ```
 
 ## Step 4: Instalasi Environment
@@ -79,3 +79,13 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     ✓ Package telah terinstall dengan baik di dalam environment jcopml
     ✓ Instalasi berjalan dengan baik. Selamat belajar!
     ```
+
+# Note
+Instruksi ini menggunakan conda dengan python 3.9 sebagai base nya. Conda 3.9 support Notebook versi 5, dan itu dibutuhkan untuk menikmati fitur Snippet di Jupyter.
+Jika menggunakan conda yang lebih baru, maka perlu downgrade Notebook jadi versi 5
+```
+>> conda install -n base -c conda-forge jupyter nb_conda_kernels 
+>> pip install notebook==5.7.11
+```
+
+Jika Notebook versi 7 sudah kembali support snippets, maka catatan ini bisa diabaikan
