@@ -81,11 +81,19 @@ Belajar dasar-dasar machine learning dari nol. Untuk fase pertama, kita akan mem
     ```
 
 # Note
-Instruksi ini menggunakan conda dengan python 3.9 sebagai base nya. Conda 3.9 support Notebook versi 5, dan itu dibutuhkan untuk menikmati fitur Snippet di Jupyter.
-Jika menggunakan conda yang lebih baru, maka perlu downgrade Notebook jadi versi 5
+Notebook versi 7.x breaking (hampir) semua extension yang ada, salah satunya "Snippets Menu" yang banyak digunakan di course.
+Jika masih ingin menggunakan "Snippets Menu" maka mesti downgrade ke Notebook 5.x dengan command berikut
 ```
 >> conda install -n base -c conda-forge jupyter nb_conda_kernels 
 >> pip install notebook==5.7.11
 ```
 
-Jika Notebook versi 7 sudah kembali support snippets, maka catatan ini bisa diabaikan
+Kalau tab nbextensions nya tidak muncul atau misalnya sudah muncul tapi isinya kosong.
+Coba jalankan ini di conda prompt / terminal nya
+```
+>> jupyter contrib nbextension install --user
+>> jupyter nbextension enable varInspector/main
+```
+
+Walau demikian, projek nbextensions sudah terlihat mati suri karena migrasi Notebook 7.x sehingga cepat lambat saya sarankan juga untuk move on (meninggalkan Jupyter Notebook dan pindah menggunakan Jupyter Lab).
+Di versi jcop yang lebih baru ada sediakan snippets yang bisa digunakan di Jupyter Lab, Jupyter Notebook, dan Jupyter VS Code.
